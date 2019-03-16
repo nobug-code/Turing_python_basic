@@ -45,7 +45,7 @@ class Foo:
     def add(x,y):
         return x + y
 
-#전역 변수 같이 사용한다. 
+#전역 변수 같이 사용한다.
 
 print(Foo.add(3,6))
 
