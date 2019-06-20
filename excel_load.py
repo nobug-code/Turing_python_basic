@@ -13,6 +13,7 @@ import numpy as np
 
 df = pd.read_csv('/Users/namgil/Downloads/excel_example.csv')
 
+#print(df.describe())
 
 #어떤 title 들을 가지고 있는지 출
 #print(df.head())
