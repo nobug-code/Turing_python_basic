@@ -4,9 +4,7 @@ function 이란???
 함수의 장점으로는 반복적으로 사용가능하고, 논리적으로 프로그램 하는데 큰 이점이 있다. 복잡한 내용을 추상화 시켜 프로그램을 편리하게 해 준다.
 
 문법
-def 함수이름(인자):
-    코드
-    return 값
+c
 의 형태를 취한다.
 
 Q. 소수를 구하는 함수를 만들어라
@@ -19,11 +17,14 @@ return 값을 안써도 자동으로 반환이 된다.
 call by value, c
 call by refernce, java 가 있다.
 value에 의한 참조는 값의 복사, refence 는 주소값을 참조한다.
+
 파이썬은 call by object reference 방법을 사용한다.
 
-def f(t):
-    t = [3,4,5]
-    return t
+def test(t):
+    print(id(t))
+t = [1,2,3]
+test(t)
+
 a = [1,2,3]
 a = f(a)
 print(a)
@@ -58,13 +59,12 @@ print(a)
         print(x)
 test()
 
--입력값
 def area(height, width):
     print(height* width)
 area(20,width=10)
 #인자를 몇개 받을지 모를때 사용하면 나머지는
-def nk_test(a,*args):
-    print(a,args)
+def nk_test(a, *args):
+    print(a, args)
 nk_test(1)
 nk_test(2,3)
 nk_test(2,3,4,5,6)
@@ -79,14 +79,5 @@ def k(func):
     return func(2,1)
 print(k(lambda  x,y : x + y))
 print(nam(lambda x : x * x))
-
 '''
-
-
-
-
-
-
-
-
 

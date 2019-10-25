@@ -1,3 +1,11 @@
+a = {}
+a = dict()
+
+a = {'한글': 170, 'age':100, 'value': 200, 'height' : 180, 'height': 190}
+
+a['height']
+print(a['height'])
+
 '''
 Dictionary 도 자료구조 이다.
 데이터의 순서가 없는 매핑형 구조이다.
@@ -7,7 +15,7 @@ Dictionary 도 자료구조 이다.
 -initilization
 a = {}
 a = dict()
-a = {'한글': 170, 'age':100, 'value': 200, 'height' : 180}
+a = {'한글': 170, 'age':100, 'value': 200, 'height' : 180, 'height': 190}
 
 -add
 a['width'] = 123
@@ -19,10 +27,10 @@ but
 value 로는 key 값을 찾지 못한다.
 
 -key값 추출
-a.keys
+a.keys()
 
--value값 추출
-a.values
+-value값 추출 
+a.values()
 
 -튜플 형태로 추출
 a.items()
@@ -51,7 +59,4 @@ g = {'temper': 40, 'humidit': 20 , 'wind':4}
 h = {'temper': 20, 'humidit': 7 , 'wind':4}
 
 forecast = [a,b,c,d,e,f,g,h]
-
-Q. 값의 어떻게 접근할까??
-
 '''

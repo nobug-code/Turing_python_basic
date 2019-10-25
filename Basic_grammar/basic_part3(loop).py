@@ -4,10 +4,10 @@ for, while loop
 for i in range(end):
     code
 
-for i in range(start,end):
+for i in range(start, end):
     code
 
-for i in range(start,end,num):
+for i in range(start, end, num):
     code
 
 Q. for 문을 이용해 별찍기 연습
@@ -15,6 +15,7 @@ Q. for 문을 이용해 별찍기 연습
     print("*" * 2)
     print("*" * 3)
     print("*" * 4)
+
 Q. 역으로 별찍기
 
 while(condition):
@@ -33,21 +34,5 @@ Q. 3,6,9 문제
 loop 중첩
 Q. 구구단 출력하기
 Q. 비트 설명 및 10진법을 2진법으로 구현
+
 '''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

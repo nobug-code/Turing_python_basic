@@ -3,7 +3,6 @@ SIZE = 100
 position = -1
 
 def push(data,stack,SIZE,position):
-
     #Overflow function
     if(position == SIZE):
         print("overflow")
@@ -34,8 +33,3 @@ while(True):
     print('stack', stack)
     print('data', data)
     print('position', position)
-
-
-
-
-

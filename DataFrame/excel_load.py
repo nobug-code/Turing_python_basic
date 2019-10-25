@@ -9,8 +9,6 @@ import missingno as msno
 import matplotlib.pyplot as plt
 import numpy as np
 
-
-
 df = pd.read_csv('/Users/namgil/Downloads/excel_example.csv')
 
 #print(df.describe())
