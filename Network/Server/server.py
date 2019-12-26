@@ -6,7 +6,7 @@ from threading import Thread
 '''
 socket 의 첫번째 인자는 패밀리, 타입이다. 
 패밀리란 주소 체계가 어떻게 되어 있는냐에 대한 것이다. 
-AF_INET, AF_INET6 를 많이 사용하는데 
+AF_INET, AF_INET6 를 많이 사용하v는데 
 AF_INT 는 IP4v
 AF_INET6는 Ip6v 가 사용된다. 
 
@@ -36,32 +36,29 @@ print("받은 데이터 ", data.decode('utf-8'))
 connectionSock.send('I am a server.'.encode('utf-8'))
 print('메시지를 보냈습니다.')
 '''
-def echo_handler(conn, addr):
-    BUF_SIZE = 1024
 
-    while True:
-        data = conn.recv(BUF_SIZE)
-        msg = data.decode()
-        print(msg)
-        conn.send("kkkk".encode())
-
-        if(msg == 'bye'):
-            conn.close()
-            break
 #send, senall  의차이점은 send 은 더 기계적으로 가갑고 sendall은 더 high-api 이다.
 serverSock = socket(AF_INET, SOCK_STREAM)
-
 serverSock.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
 serverSock.bind(('', 8080))
 
+'3+5'
+'8'
 
 #listen 의 입력에 따라 갯수가 정해진다.
 while True:
+
+    BUF_SIZE = 2048
     serverSock.listen(3)
     conn, addr = serverSock.accept()
-    print(conn)
-    t = Thread(target=echo_handler, args=(conn, addr))
-    t.start()
+    data = conn.recv(BUF_SIZE)
+    msg = data.decode()
+    print(msg)
+    conn.send("kkkkkkkk".encode())
+
+    if (msg == 'bye'):
+        conn.close()
+        break
 
 serverSock.close()
 #222.100.117.211
@@ -71,3 +68,4 @@ serverSock.close()
 그럼 만약 다른 ip 에서 접근을 할려그러면 어떻게 해야 될까
 ip 주소는 192.168.0.49 처럼 내부 ip 를 사용했다. 
 '''
+\

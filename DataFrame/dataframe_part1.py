@@ -5,6 +5,7 @@ excel_file = 'part_time.csv'
 df = pd.read_csv(excel_file)
 
 df['total_time'] =  df['End_time'] - df['Start_time']
+
 df['time_of_make'] = df['Make']/df['total_time']
 
 df = df.sort_values(by=['time_of_make'], ascending=False)

@@ -29,3 +29,22 @@ while(q.empty() == False):
             if(matrix[c_x][c_y] == 1 and visited[c_x][c_y] == 0):
                 q.put((c_x, c_y, count + 1))
                 visited[c_x][c_y] = 1
+
+#Algorithm
+
+#Crawling
+
+#Deeplearning
+
+    # practice
+
+    # regression
+
+    # mnist
+
+    # CNN_project
+        # Paint
+
+
+#Opencv
+

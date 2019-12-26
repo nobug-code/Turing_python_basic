@@ -1,5 +1,5 @@
 import math
-from map import empty_cells
+from UseApi import empty_cells
 from gameCheck import wins, checkGame
 
 def minmax(depth, player, game_board, computer_mark, user_mark):

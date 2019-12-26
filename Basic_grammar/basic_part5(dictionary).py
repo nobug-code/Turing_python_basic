@@ -1,9 +1,12 @@
+#Dictionary
+#github
+a = list()
 a = {}
 a = dict()
+a = {'한글': 170, 'age': 100, 'value': 200, 'height': 180, 'height': 190}
 
-a = {'한글': 170, 'age':100, 'value': 200, 'height' : 180, 'height': 190}
-
-a['height']
+b = list(a)
+a.keys()
 print(a['height'])
 
 '''
@@ -45,7 +48,7 @@ len(a)
 list_to_key = list(a)
 
 아래와 같이 key 값을 숫자로도 사용할 수 있다.
-d = {3:'a',2:'b',1:'c'}
+d = {3:'a', 2:'b', 1:'c'}
 
 list + dictionary
 
@@ -58,5 +61,5 @@ f = {'temper': 32, 'humidit': 16 , 'wind':4}
 g = {'temper': 40, 'humidit': 20 , 'wind':4}
 h = {'temper': 20, 'humidit': 7 , 'wind':4}
 
-forecast = [a,b,c,d,e,f,g,h]
+forecast = [a, b, c, d ,e, f, g, h]
 '''

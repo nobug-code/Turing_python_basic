@@ -1,5 +1,5 @@
 import pygame
-from map import get_pos_from_number
+from UseApi import get_pos_from_number
 
 grid_size = 90
 

@@ -34,5 +34,11 @@ Q. 3,6,9 문제
 loop 중첩
 Q. 구구단 출력하기
 Q. 비트 설명 및 10진법을 2진법으로 구현
-
 '''
+
+# Enter the number if number 1, plus if number 2 , minus
+# 3 mul, 4 div, 10 break
+
+a = 3
+b = 4
+c = int(input())

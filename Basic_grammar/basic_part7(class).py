@@ -14,6 +14,7 @@
 클래스의 특징
 상속, 부모 클래스의 함수를 사용할 수 있다.
 
+
 class A:
     self.a = 10
     def say(self):
@@ -43,3 +44,27 @@ print(Foo.add(3,6))
 import , from
 
 '''
+import random
+
+class makeCharacter:
+
+    def __init__(self):
+        self.hp = random.randrange(1, 20)
+        self.mp = random.randrange(1, 40)
+        self.q = random.randrange(1, 4)
+
+    def attack(self):
+        return self.q
+
+    def attacked(self, atk):
+        self.hp = self.hp - atk
+
+
+ogar = makeCharacter()
+mc = makeCharacter()
+turn = 1
+while ogar.hp > 0 and mc.hp  > 0:
+
+    if turn == 1:
+        mc.attacked(ogar.q)
+

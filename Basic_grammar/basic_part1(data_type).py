@@ -1,23 +1,33 @@
 '''
 Data Type
+
 int / 정수
 float / 소수
 str / 문자
 bool / True/False
 
-ex) a = 3
+ex)
+    a = 3
     b = 3.1
     c = "Hello"
     type(a)
     type(b)
     type(c)
 
+print(a)
+print(type(a))
+
+a = "3"
+a = int(a)
+
+a = str(a)
+
 Type change
 #str -> int
 #int -> str
 #float -> int etc
 
-연산  +,-,*,/,%
+연산  +, -, *, **, /, // ,%
 
 부등호
 >,<, ==, <=, >=, !=

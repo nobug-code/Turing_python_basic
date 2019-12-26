@@ -1,6 +1,23 @@
+def find_prime(num):
+
+    flag = 0
+    for i in range(2, num//2 + 1):
+        if num % i == 0:
+            flag = 1
+            break
+    if flag == 1:
+        print("not prime")
+    else:
+        print("prime")
+
+a = 0
+while a != 10:
+    a = int(input())
+    find_prime(a)
+
 '''
 function 이란???
-코드들의 집합니다. 단순히, 코드들의 집합이 아니라 특별한 기능들을 수행하는 코드들의 모임이다.
+코드들의 집합이다. 단순히, 코드들의 집합이 아니라 특별한 기능들을 수행하는 코드들의 모임이다.
 함수의 장점으로는 반복적으로 사용가능하고, 논리적으로 프로그램 하는데 큰 이점이 있다. 복잡한 내용을 추상화 시켜 프로그램을 편리하게 해 준다.
 
 문법

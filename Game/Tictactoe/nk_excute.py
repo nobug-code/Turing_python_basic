@@ -18,7 +18,7 @@
 #8.30 에는 이미지를 입히는 작업을 진행 할 것이다.
 
 from select_option import selectMark, selectTurn, position_check
-from map import cleanGame, empty_cells, get_number_from_pos
+from UseApi import cleanGame, empty_cells, get_number_from_pos
 from gameCheck import checkGame, wins
 import random
 from algorithm import minmax
