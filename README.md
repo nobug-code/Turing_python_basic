@@ -37,6 +37,10 @@ Comments나 Pull requests는 언제나 환영합니다.
 # DataFrame
 # Gui
   * tkinter
+# Funny_image_project
+ * filter
+ * numpy
+ * cvzone
  
 
 
