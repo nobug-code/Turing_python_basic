@@ -1,3 +1,7 @@
+'''
+자료 참조 cvzone
+'''
+
 import cv2
 from cvzone.HandTrackingModule import HandDetector
 # 카메라를 VideoCapture 객체로 가져온다.
