@@ -1,3 +1,6 @@
+![superman](https://user-images.githubusercontent.com/12744499/156861901-e6bcc984-756e-448a-a9a7-d2c1f4e219ae.png)
+
+
 # 튜링 코딩의 알고리즘 : 파이썬 수업 자료 입니다. 
 파이썬 코드의 기초 관련 수업 자료 입니다. 
 
